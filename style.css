@@ -2,7 +2,7 @@ body {
   font-family: "Helvetica", sans-serf;
 }
 
-/* Subscription */
+/* Feedback */
 .sub {
   margin-top: 2rem;
   height: 10vh;
@@ -14,10 +14,9 @@ body {
 
 form {
   text-align: center;
-  margin: 2rem;
 }
 
-.email-sub {
+.feedback {
   padding: 0.2rem;
   border: 1px solid(#2D2926);
   border-radius: 4px;

@@ -1,5 +1,3 @@
-<?php include 'mail.php'  ?>
- 
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,20 +5,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Email subscription -->
+    <!-- Feedback -->
     <section class="sub" id="sub">
-      <h3>Subscribe to our newsletter</h3>
-      <form action="mail.php?" method="POST">
+      <h3>Feedback form</h3>
+      <form action="mailto:vifirsanova@gmail.com" method="post" enctype="text/plain">
         <input
-          type="email"
-          name="email"
-          id="email-sub"
-          class="email-sub"
+          type="text"
+          name="feedback"
+          id="feedback"
+          class="feedback"
+		  size="50"
           required
         />
         <input
           type="submit"
-          value="Subscribe"
+          value="Submit"
           id="submit-btn"
           class="submit-btn"
         />
