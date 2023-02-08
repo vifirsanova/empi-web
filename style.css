@@ -1,19 +1,17 @@
 body {font-family: system-ui, sans-serif;
-background-color: #222222;}
+background-color: #222222;
+color: #fff}
 
 h1 {
 	text-align: left;
-	color: #fff;
 	margin: 80px;
 }
 
 h3 {
 	text-align: left;
-	color: #fff;
 }
 
 p {
-  color: #fff;
   text-align: center;
   margin-left: 80px;
   margin-right: 80px;
@@ -43,17 +41,12 @@ input[type=submit]:hover {
   background-color: #747474;
 }
 
-label {
-	color: white;
-}
-
 .container {
   margin: 80px;
 }
 
 footer {
    width: 100%;
-   color: white;
    text-align: center;
    border-top: 1px solid #444444;
 }
@@ -87,4 +80,9 @@ footer {
   padding: 10px;
   border-radius: 50%;
   background: #ffffff;
+}
+
+.dark-mode {
+  background-color: #fffbf2;
+  color: black;
 }
