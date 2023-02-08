@@ -1,6 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
 body {font-family: system-ui, sans-serif;
 background-color: #222222;
 color: #fff}
+
+body.light {
+  background-color: #fff8e7;
+  color: #111111;
+}
 
 h1 {
 	text-align: left;
@@ -63,7 +72,7 @@ footer {
   display: block;
   margin: 15px;
   background: #fff;
-  width: 290px;
+  width: 310px;
   text-align: right;
   padding: 10px;
   border-radius: 0 30px 30px 0;
@@ -82,12 +91,48 @@ footer {
   background: #ffffff;
 }
 
-.dark-mode {
-  background-color: #fffbf2;
-  color: black;
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 50px;
+  height: 26px;
+  background-color: #111111;
+  display: flex;
+  border-radius:50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball{
+  transform: translateX(24px);
 }
 
 .switch{
-	float: right;
-	margin-right: 80px;
+  position: absolute;
+  right: 80px;
+}
+
+.fa-moon-o {
+  color: #fff;
+}
+
+.fa-sun-o {
+  color: #fff;
 }
