@@ -86,3 +86,8 @@ footer {
   background-color: #fffbf2;
   color: black;
 }
+
+.switch{
+	float: right;
+	margin-right: 80px;
+}
