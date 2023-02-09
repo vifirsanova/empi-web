@@ -136,3 +136,13 @@ footer {
 .fa-sun-o {
   color: #fff;
 }
+
+.top{
+  text-decoration: none;
+  border-radius: 100px;
+  background: #111111;
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  right: 80px; 
+}
