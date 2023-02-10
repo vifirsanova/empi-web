@@ -58,6 +58,14 @@ input[type=submit]:hover {
   margin: 80px;
 }
 
+.feed_elem{
+  margin-top: 40px;
+  background-color: white;
+  border-radius: 6px;
+  height: 400px;
+  overflow: scroll;
+}
+
 footer {
    width: 100%;
    border-top: 1px solid #444444;
@@ -160,22 +168,4 @@ footer {
   background-color: #222222;
   color: white;
   box-shadow: #111111 4px 4px 0 0;
-}
-
-.feed{
-  background-color: white;
-  border-radius: 6px;
-}
-
-.column {
-  float: left;
-  width: 50%;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-.feed:after {
-  content: "";
-  display: table;
-  clear: both;
 }
