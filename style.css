@@ -42,16 +42,20 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #444444;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 6px;
+  padding: 10px;
+  border-radius: 30px;
   cursor: pointer;
+  font-size: 16px;
+  background-color: #fff;
+  color: #222222;
+  border: 2px solid #111111;
+  box-shadow: #666666 4px 4px 0 0;
 }
 
 input[type=submit]:hover {
-  background-color: #747474;
+  background-color: #222222;
+  color: white;
+  box-shadow: #111111 4px 4px 0 0;
 }
 
 .container {
