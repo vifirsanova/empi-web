@@ -186,11 +186,6 @@ footer {
   overflow: hidden;
   font-size: 30px;
   line-height: 40px;
-  //position: absolute;
-  //top: 50%;
-  //left: 50%;
-  //transform: translate(-50%, -50%);
-  
   width: 100%;
   margin: 0;
 }
@@ -199,18 +194,19 @@ footer {
   font-weight: 600;
   overflow: hidden;
   height: 40px;
-  text-align: center;
-  padding-right: 150px;
+  width: 100%;
+  display: grid;
+  justify-content: center;
 }
 
 .content__container__text {
   display: inline;
-  float: center;
+  float: left;
   margin: 0;
 }
 .content__container__list {
   margin-top: 0;
-  padding-left: 750px;
+  padding-left: 80px;
   text-align: left;
   list-style: none;
   -webkit-animation-name: change;
@@ -219,7 +215,6 @@ footer {
   animation-name: change;
   animation-duration: 10s;
   animation-iteration-count: infinite;
-  //border: 3px solid green;
 }
 
 @-webkit-keyframes change {
@@ -345,8 +340,6 @@ img{
   background-image: url("https://cdn.pixabay.com/photo/2017/05/11/11/15/workplace-2303851_960_720.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  //background-position: 50% 0;
-  //opacity: 0.6;
   content: ' ';
   display: block;
   position: absolute;
