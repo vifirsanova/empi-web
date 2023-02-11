@@ -182,18 +182,18 @@ footer {
 }
 
 .content {
-  height: 160px;
+  height: 170px;
   overflow: hidden;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 40px;
+  line-height: 55px;
   width: 100%;
   margin: 0;
 }
 
 .content__container {
-  font-weight: 600;
+  font-weight: 700;
   overflow: hidden;
-  height: 40px;
+  height: 45px;
   width: 100%;
   display: grid;
   justify-content: center;
@@ -206,7 +206,7 @@ footer {
 }
 .content__container__list {
   margin-top: 0;
-  padding-left: 80px;
+  padding-left: 110px;
   text-align: left;
   list-style: none;
   -webkit-animation-name: change;
@@ -301,13 +301,6 @@ footer {
   }
 }
 
-img{
-	width: 100%;
-    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
-	height: auto;
-}
-
 .btn{
   top: 50%;
   left: 50%;
@@ -319,7 +312,7 @@ img{
   cursor: pointer;
   box-shadow: #666666 4px 4px 0 0;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 5px 10px;
   display: inline-block;
   position: relative;
   font-size: 20px;
@@ -337,11 +330,11 @@ img{
 }
 
 .header:before{
-  background-image: url("https://cdn.pixabay.com/photo/2017/05/11/11/15/workplace-2303851_960_720.jpg");
+  background-image: url("background.gif");
   background-repeat: no-repeat;
   background-size: cover;
   content: ' ';
-  display: block;
+  display: inline;
   position: absolute;
   left: 0;
   top: 0;
