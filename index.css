@@ -182,10 +182,10 @@ footer {
 }
 
 .content {
-  height: 170px;
+  height: 160px;
   overflow: hidden;
   font-size: 40px;
-  line-height: 55px;
+  line-height: 40px;
   width: 100%;
   margin: 0;
 }
