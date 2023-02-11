@@ -60,6 +60,13 @@ input[type=submit]:hover {
   box-shadow: #111111 4px 4px 0 0;
 }
 
+.subheader__container{
+  font-size: 30px;
+  position: absolute;
+  top: 250px;
+  //border: 3px solid #73AD21;
+}
+
 .container {
   margin: 80px;
 }
@@ -193,7 +200,6 @@ footer {
   //color: #fff;
   width: 99%;
   top: 100px;
-  //border: 3px solid #73AD21;
 }
 
 .content__container {
@@ -309,14 +315,7 @@ footer {
 }
 
 .btn{
-  top: 50px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 10%;
-  text-align: center;
-  //top: 50%;
-  //left: 50%;
-  //transform: translate(-50%, -50%);
+  margin-top: 30px;
   border-radius: 30px;
   background-color: #bc154e;
   color: #fff;
@@ -324,10 +323,11 @@ footer {
   cursor: pointer;
   box-shadow: #3e071a 4px 4px 0 0;
   text-decoration: none;
-  padding: 5px 10px;
-  display: inline-block;
-  position: relative;
+  padding: 10px 30px;
   font-size: 20px;
+  position:absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .btn:hover {
@@ -358,8 +358,11 @@ footer {
 
 .subheader{
   text-align: center;
+  font-size: 25px;
   margin-left: 80px;
   margin-right: 80px;
+  overflow: auto;
+  height: 110px;
 }
 
 /* Style the video: 100% width and height to cover the entire window */
