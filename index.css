@@ -193,11 +193,12 @@ footer {
 .content__container {
   font-weight: 700;
   overflow: hidden;
-  height: 45px;
+  height: 40px;
   width: 100%;
   display: grid;
   justify-content: center;
 }
+
 
 .content__container__text {
   display: inline;
