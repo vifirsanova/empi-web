@@ -184,7 +184,7 @@ footer {
 .content {
   height: 160px;
   overflow: hidden;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 40px;
   width: 100%;
   margin: 0;
@@ -207,7 +207,7 @@ footer {
 }
 .content__container__list {
   margin-top: 0;
-  padding-left: 110px;
+  padding-left: 80px;
   text-align: left;
   list-style: none;
   -webkit-animation-name: change;
