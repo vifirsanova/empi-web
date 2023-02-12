@@ -65,8 +65,12 @@ input[type=submit]:hover {
   position: absolute;
   top: 250px;
   text-align: center;
-  margin-left: 80px;
-  margin-right: 80px;
+  //margin-left: 80px;
+  //margin-right: 80px;
+  
+  max-width: 500px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .subheader__content:{
