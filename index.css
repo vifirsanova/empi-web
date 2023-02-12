@@ -76,6 +76,7 @@ input[type=submit]:hover {
 
 .container {
   margin: 80px;
+  padding-top: 50px;
 }
 
 .feed_elem {
