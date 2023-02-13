@@ -33,7 +33,6 @@
 			<a href="#" class="btn">Donate</a>
 		</div>
 	</header>
-
 	<!-- Social Media Bar -->
 	<nav class="social">
     <ul>
@@ -54,9 +53,34 @@
 	</div>
 	<script src="script.js"></script>
 	</div>
+	<!-- Stats -->
+	<div class="card__container">
+		<div class="card">
+		<div class="left">
+			<h3 class="big-text centered">did you know?</h3>
+			<p class="description centered">The number of children diagnosed with Autism Spectrum Disorder (ASD) grows.</p> 
+			<div class="stats">
+				<div>
+					<p class="number">1/44</p>
+					<p class="para stat-text"> children has ASD</p>
+				</div>
+
+				<div>
+					<p class="number">1%</p>
+					<p class="para stat-text">people on the globe has ASD</p>
+				</div>
+				<div>
+					<p class="number">75M+ people</p>
+					<p class="para stat-text">including adults</p>
+				</div>
+			</div>
+		</div>
+		<div class="right overlay"></div>
+		</div>
+	</div>
 	<!-- Feed -->
 	<div class="container">
-		<h3>OUR LATEST UPDATES ON SOCIAL MEDIA</h3>
+		<h3 class="big-text">SOCIAL MEDIA</h3>
 		<div class="feed_elem">
 			<a class="twitter-timeline" data-height="400" data-theme="light" href="https://twitter.com/vifirsanova?ref_src=twsrc%5Etfw">Tweets by vifirsanova</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
@@ -71,34 +95,41 @@
 		</div>
 	</div>
     <!-- Feedback -->
-    <div class="container">
-	  <h3>FEEDBACK FORM</h3>
-      <form action="mailto:vifirsanova@gmail.com" method="post" enctype="text/plain">
-		<label for="fname">First Name</label>
-		<input type="text" id="fname" name="firstname" placeholder="Your name..">
+	<section id="feedback">
+		<div class="container">
+			<div class="row">
+			  <h3 class="big-text">Your Feedback</h3>
+			  <p class="description"> You can leave us your feedback in a form below. We will contact you as soon as possible. </p>
+			  <form action="mailto:vifirsanova@gmail.com" method="post" enctype="text/plain">
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-		<label for="lname">Last Name</label>
-		<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-		<label for="specialization">What is your specialization?</label>
-		<select id="specialization" name="specialization">
-		  <option value="academic">Academic Research</option>
-		  <option value="it">IT-Development</option>
-		  <option value="med">Medicine</option>
-		  <option value="fin">Finance</option>
-		  <option value="oth">Other</option>
-		</select>
+				<label for="specialization">What is your specialization?</label>
+				<select id="specialization" name="specialization">
+				  <option value="academic">Academic Research</option>
+				  <option value="it">IT-Development</option>
+				  <option value="med">Medicine</option>
+				  <option value="fin">Finance</option>
+				  <option value="oth">Other</option>
+				</select>
 
-		<label for="feedback">Feedback</label>
-		<textarea id="feedback" name="feedback" placeholder="Write something.." style="height:200px"></textarea>
+				<label for="feedback">Feedback</label>
+				<textarea id="feedback" name="feedback" placeholder="Write something.." style="height:200px"></textarea>
 
-		<input type="submit" value="Submit">
-      </form>
-    </div>
+				<input type="submit" value="Submit">
+			  </form>
+			</div>
+		</div>
+    </section>
+	<!-- Back to top -->
 	<a href="#" class="top">Back to Top &#8593;</a>
+	<!-- Footer -->
 	<footer>
-	  <p>Please email vifirsanova@gmail.com</p>
-	  <p>EMPI: Empathic Machine Processors for Inclusion &copy; 2023 | Victoria Firsanova<p>
+	  <p class="p__footer">Please email vifirsanova@gmail.com</p>
+	  <p class="p__footer">EMPI: Empathic Machine Processors for Inclusion &copy; 2023 | Victoria Firsanova<p>
 	</footer>
   </body>
 </html>
