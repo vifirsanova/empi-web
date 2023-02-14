@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  --main-bg-color: #fff;
 }
 
 *{
@@ -11,12 +12,12 @@ html {
 body {
   font-family: system-ui, sans-serif;
   background-color: #222222;
-  color: #fff;
+  color: var(--main-bg-color);
 }
 
 body.light {
   background-color: #fff8e7;
-  color: #111111;
+  --main-bg-color: #111111;
 }
 
 h1 {
@@ -332,7 +333,7 @@ footer {
   margin-top: 50px;
   border-radius: 30px;
   background-color: #bc154e;
-  color: #fff;
+  color: white;
   border: 2px solid #111111;
   cursor: pointer;
   box-shadow: #3e071a 4px 4px 0 0;
@@ -554,4 +555,24 @@ footer {
   padding-top: 100px;
 }
 
+a.comment:link{
+	color: var(--main-bg-color);
+}
+
+a.comment:visited {
+  color: var(--main-bg-color);
+}
+
+a.comment:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a.comment:active {
+  color: #bc154e;
+}
+
+.comment{
+	padding-top: 50px;
+}
 /*# sourceMappingURL=index.css.map */
