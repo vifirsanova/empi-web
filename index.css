@@ -398,11 +398,9 @@ footer {
 
 .card{
     width: 100%;
-	//width: 1115px;
     display: flex;
 	justify-content: center;
     align-items: center;
-	//background-image: url("background.png");
 }
 
 .card__pic{
@@ -444,54 +442,30 @@ footer {
     justify-content: space-between;
 }
 
-.grid {
-	//position: relative;
-	//margin: 0 auto;
-	//padding: 1em 0 4em;
-	//max-width: 1000px;
-	//list-style: none;
-	//text-align: center;
-}
-
-/* Common style */
-.grid figure {
+.figure {
 	position: relative;
-	//float: left;
-	//overflow: hidden;
-	//margin: 10px 1%;
-	//min-width: 320px;
-	//max-width: 500px;
-	//max-height: 360px;
-	//width: 100%;
-	//background: #3085a3;
-	//text-align: center;
-	//cursor: pointer;
+	overflow: hidden;
+	margin: 0px;
+	min-width: 320px;
+	max-height: 360px;
+	width: 100%;
+	cursor: pointer;
 }
 
-.grid figure img {
-	//position: relative;
-	//display: block;
-	//min-height: 100%;
-	//max-width: 100%;
-	//opacity: 0.8;
-}
-
-.grid figure figcaption {
-	padding: 2em;
-	color: #fff;
+.figure figcaption {
 	text-transform: uppercase;
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
-	//backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
-.grid figure figcaption::before,
-.grid figure figcaption::after {
-	//pointer-events: none;
+.figure figcaption::before,
+.figure figcaption::after {
+	pointer-events: none;
 }
 
-.grid figure figcaption,
-.grid figure figcaption > a {
+.figure figcaption,
+.figure figcaption > a {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -499,9 +473,7 @@ footer {
 	height: 100%;
 }
 
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-.grid figure figcaption > a {
+.figure figcaption > a {
 	z-index: 1000;
 	text-indent: 200%;
 	white-space: nowrap;
@@ -509,81 +481,77 @@ footer {
 	opacity: 0;
 }
 
-.grid figure h2 {
-	word-spacing: -0.15em;
-	font-weight: 300;
+.figure h2 {
+	font-weight: 350;
 }
 
-.grid figure h2 span {
+.figure h2 span {
 	font-weight: 800;
 }
 
-.grid figure h2,
-.grid figure p {
-	margin: 0;
+.figure img {
+	max-width: none;
+	width: -webkit-calc(100% + 50px);
+	width: calc(100% + 50px);
+	opacity: 0.3;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-40px,0, 0);
+	transform: translate3d(-40px,0,0);
 }
 
-.grid figure p {
+.figure figcaption p {
 	letter-spacing: 1px;
-	font-size: 68.5%;
-}
-figure.effect-honey {
-	background: #4a3753;
+	font-size: 80%;
 }
 
-figure.effect-honey img {
-	//opacity: 0.9;
-	//-webkit-transition: opacity 0.35s;
-	//transition: opacity 0.35s;
+.figure figcaption > div {
+	position: absolute;
+	bottom: 0;
+	left: 80px;
+	padding: 2em;
+	width: 100%;
 }
 
-figure.effect-honey:hover img {
+.figure h2,
+.figure p {
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+
+.figure h2 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+.figure p {
+	opacity: 0;
+	padding-top: 5px;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+	transition: opacity 0.2s, transform 0.35s;
+}
+
+.figure:hover img,
+.figure:hover p {
 	opacity: 0.5;
 }
 
-figure.effect-honey figcaption::before {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 10px;
-	background: #fff;
-	content: '';
-	-webkit-transform: translate3d(0,10px,0);
-	transform: translate3d(0,10px,0);
+.figure:hover img,
+.figure:hover h2,
+.figure:hover p {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
 }
 
-figure.effect-honey h2 {
-	//position: absolute;
-	//bottom: 0;
-	//left: 0;
-	//padding: 1em 1.5em;
-	//width: 100%;
-	//text-align: left;
-	//-webkit-transform: translate3d(0,-30px,0);
-	//transform: translate3d(0,-30px,0);
+.figure:hover p {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+	-webkit-transition-duration: 0.35s;
+	transition-duration: 0.35s;
 }
 
-figure.effect-honey h2 i {
-	//font-style: normal;
-	//opacity: 0;
-	//-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	//transition: opacity 0.35s, transform 0.35s;
-	//-webkit-transform: translate3d(0,-30px,0);
-	//transform: translate3d(0,-30px,0);
+.container__fig {
+  padding-top: 100px;
 }
 
-figure.effect-honey figcaption::before,
-figure.effect-honey h2 {
-	//-webkit-transition: -webkit-transform 0.35s;
-	//transition: transform 0.35s;
-}
-
-figure.effect-honey:hover figcaption::before,
-figure.effect-honey:hover h2,
-figure.effect-honey:hover h2 i {
-	//opacity: 1;
-	//-webkit-transform: translate3d(0,0,0);
-	//transform: translate3d(0,0,0);
-}
 /*# sourceMappingURL=index.css.map */
