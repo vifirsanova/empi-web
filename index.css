@@ -588,7 +588,7 @@ a.comment:active {
 }
 
 .social-footer {
-  text-align: left;
+  text-align: center;
   padding: 20px;
 }
 
@@ -596,15 +596,16 @@ a.comment:active {
   display: inline-block;
   position: relative;
   cursor: pointer;
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border: none;
   padding-top: 0;
   text-decoration: none;
   text-align: center;
   color: #111111;
   font-size: 1.5em;
-  line-height: 2em;
+  line-height: 1.6em;
+  //letter-spacing: 10px;
   border-radius: 1.5rem;
   transition: all 1s;
 }
