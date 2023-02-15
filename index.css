@@ -636,4 +636,33 @@ a.comment:active {
   background: #171515;
 }
 
+
+.feature {
+  position: relative;
+  max-width: 100%;
+  height: 15rem;
+  margin: 2rem auto;
+  padding: 2em;
+  border-radius: 0.75em;
+  box-shadow: 5px 5px 20px rgba(0 0 0/0.15);
+  text-align: left;
+  transition: transform 200ms ease-in;
+  display: grid;
+  border-top: 5px solid #bc154e;
+}
+
+.feature:hover {
+  transform: scale(1.03);
+}
+
+.feature__desc {
+  margin-top: 0.5em;
+}
+
+.feature__img {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
 /*# sourceMappingURL=index.css.map */
