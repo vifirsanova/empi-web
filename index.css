@@ -221,11 +221,8 @@ footer {
   line-height: 40px;
   margin: 0;
   position: absolute;
-  //bottom: 0;
-  //background: rgba(0, 0, 0, 0.5);
-  //color: #fff;
   width: 99%;
-  top: 100px;
+  top: 140px;
 }
 
 .content__container {
@@ -639,7 +636,7 @@ a.comment:active {
 
 .feature {
   position: relative;
-  max-width: 100%;
+  max-width: 500px;
   height: 15rem;
   margin: 2rem auto;
   padding: 2em;
@@ -648,21 +645,24 @@ a.comment:active {
   text-align: left;
   transition: transform 200ms ease-in;
   display: grid;
-  border-top: 5px solid #bc154e;
+  border-top: 5px solid rgb(188,21,78, 0.3);
+  overflow: auto;
 }
 
 .feature:hover {
-  transform: scale(1.03);
+  transform: scale(1.1);
 }
 
 .feature__desc {
   margin-top: 0.5em;
+  margin-right: 10px;
+
 }
 
-.feature__img {
-  position: absolute;
-  bottom: 10%;
-  right: 10%;
+.feature_title{
+	margin-right: 50px;
 }
+
+
 
 /*# sourceMappingURL=index.css.map */
