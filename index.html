@@ -1,173 +1,105 @@
-  <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-	<!-- Header -->
-	<header class="header">
-		<div class="content">
-		  <div class="content__container">
-			EMPI
-			<ul class="content__container__list">
-			  <li class="content__container__list__item">EMPATHIC</li>
-			  <li class="content__container__list__item">PROCESSORS</li>
-			  <li class="content__container__list__item">FOR INCLUSION</li>
-			  <li class="content__container__list__item">EMPI</li>
-			</ul>
-		  </div>
-		</div>
-		<div class="subheader__container">
-			<div class="subheader__content">
-			My experience of living of living in an inclusive dormitory teached me to communicate openly without fear. Now I want to build a mobile app that will help me to share my experience and support inclusion of people with special needs. The project is non-profit. You can become a part of this journey right now!
-			</div>
-			<a href="#" class="btn">Donate</a>
-		</div>
-	</header>
-	<!-- Dark mode switch -->
-	<div class="switch">
-	<input type="checkbox" class="checkbox" id="checkbox">
-	  <label for="checkbox" class="label">
-		<i class="fa fa-sun-o"></i>
-		<i class="fa fa-moon-o"></i>
-		<div class='ball'>
-	  </label>
-	</div>
-	</div>
-	<!-- Back to top -->
-	<!--a href="#" class="top">Back to Top &#8593;</a-->
-	<button onclick="Scrollback()" id="scroll_btn" title="Back to top">Back to top</button>
-	<script src="script.js"></script>
-	<!-- Stats -->
-	<div class="card__container">
-		<div class="card">
-		<div>
-			<h3 class="big-text centered">did you know?</h3>
-			<p class="description centered">The number of children diagnosed with Autism Spectrum Disorder (ASD) grows. </p> 
-			<p class="description centered">How many children and adults are diagnosed with ASD?*</p> 
-			<div class="stats">
-				<div>
-					<p class="number">1/100</p>
-					<p class="para stat-text">children</p>
-				</div>
-				<div>
-					<p class="number">1%</p>
-					<p class="para stat-text">worldwide</p>
-				</div>
-				<div>
-					<p class="number">75M+ </p>
-					<p class="para stat-text">people</p>
-				</div>
-			</div>
-			<p class="comment">* According to <a class="comment" href="https://www.who.int/news-room/fact-sheets/detail/autism-spectrum-disorders">World Health Organization (WHO)</a> and <a class="comment" href="https://www.cdc.gov/ncbddd/autism/data.html">the Centers for Disease Control and Prevention (CDC)</a></p>
-		</div>
-		<div class="right overlay"></div>
-		</div>
-	</div>
-	<div class="container__fig">
-		<figure class="figure">
-			<img src="background_phone.jpg"/>
-				<figcaption>
-					<div>
-						<h2>EMPI helps</h2>
-						<p>to raise awareness of inclusion</p>
-					</div>
-					<a href="#">View more</a>
-				</figcaption>	
-		</figure>
-	</div>
-	<!-- Features -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMPI Product Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <div class="scroll-to-top" id="scrollToTop"></div>
+  <nav class="navbar">
+<script src="script.js"></script>
     <div class="container">
-	 <h3 class="big-text centered">
-      what is empi?
-    </h3>
-    <p class="description centered">EMPI is a mobile app that has some cool features.</p>
-	<div class="container__feat">
-      <div class="feature">
-        <h2 class="feature__title">AI-Powered Chatbot</h2>
-        <p class="feature__desc">Find out about inclusion, parenting and communication without human mediator. <a class="comment" href="#"> Learn more.</a></p>
+      <ul>
+        <li><a href="#block2">продукты</a></li>
+        <li><a href="https://raw.githubusercontent.com/vifirsanova/empi-web/main/policy.pdf">политика</a></li>
+        <li><a href="https://raw.githubusercontent.com/vifirsanova/empi-web/main/licence.pdf">лицензия</a></li>
+        <li><a href="https://raw.githubusercontent.com/vifirsanova/empi-web/main/strategy.pdf">стратегия</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="block" id="block1">
+    <header>
+      <h1>EMPI</h1>
+      <h2>EMPATHIC</h2>
+      <h2>ACCESSIBLE</h2>
+      <h2>DIFFERENT</h2>
+      <div class="image-container">
+      <img src="https://raw.githubusercontent.com/vifirsanova/empi-web/main/empi(1).png" alt="Logo">
       </div>
-      <div class="feature">
-        <h2 class="feature__title">Catalogue of Social Stories</h2>
-        <p class="feature__desc">The Social Stories are comic stripes or short novels about behavior and communication. <a class="comment" href="#"> Learn more.</a></p>
+    </header>
+  </div>
+
+  <div class="block" id="block2">
+    <header>
+      <h3>Узнай больше</h3>
+      
+      <div class="content">
+  <div class="image-container-blocks">
+    <img src="https://raw.githubusercontent.com/vifirsanova/empi-web/main/1-bot.png" alt="chatbot-sample-image">
+  </div>
+</div>
+      
+    </header>
+
+  </div>
+
+  <div class="block" id="block3">
+    <header class="par">
+      <h2>Отслеживай уровень стресса с помощью умных часов и программы "Трекер"</h2>
+      <h2> Простые упражнения из серии "Отдых" помогут снизить тревожность</h2>
+      <h2> Будь в курсе любимых инклюзивных событий и оставайся на связи с друзьями </h2>
+    </header>
+    <div class="content">
+    </div>
+  </div>
+
+  <div class="block" id="block4">
+    <header class="special">
+      <h3>Трекер</h3>
+       <div class="content">
+  <div class="image-container-blocks">
+    <img src="https://raw.githubusercontent.com/vifirsanova/empi-web/main/2-stress.png" alt="tracker-sample-image">
+  </div>
+    </header>
+    <div class="content">
+    </div>
+  </div>
+
+  <div class="block" id="block5">
+    <header>
+      <h3>Отдых</h3>
+       <div class="content">
+  <div class="image-container-blocks">
+    <img src="https://raw.githubusercontent.com/vifirsanova/empi-web/main/3-relax.png" alt="relaxation-sample-image">
+  </div>
+</div>
+    </header>
+    <div class="content">
+    </div>
+  </div>
+  
+<div class="block" id="block6">
+    <header>
+      <h3>Нужна помощь?</h3>
+         <div class="par">
+  <h2>Позови друзей! </h2> <h2> EMPI - это доступный чат, уведомления от друзей, безопасная интернет-среда</h2>
+              </div>
       </div>
-      <div class="feature">
-        <h2 class="feature__title">Favorites and Notes</h2>
-        <p class="feature__desc">Save your favorite Social Stories, make notes and use them for learning. <a class="comment" href="#"> Learn more.</a></p>
-      </div>
-      <div class="feature">
-        <h2 class="feature__title">Planning Calendar</h2>
-        <p class="feature__desc">Plan your day and find out about upcoming local charity events. <a class="comment" href="#"> Learn more.</a></p>
-	 </div>
-    
-	</div>
-	</div>
-	<!-- Feed -->
-	<div class="container">
-		<h3 class="big-text">SOCIAL MEDIA</h3>
-		<div class="feed_elem">
-			<a class="twitter-timeline" data-height="400" data-theme="light" href="https://twitter.com/vifirsanova?ref_src=twsrc%5Etfw">Tweets by vifirsanova</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-		</div>
-		<div class="feed_elem">
-			<div id="vk_post_-218151533_9"></div>
-				<script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
-				<script type="text/javascript">
-				(function() {
-					VK.Widgets.Post("vk_post_-218151533_9", -218151533, 9, 'XBC0Lq-Q7Es89frYqbqx2BiengU');
-				}());
-				</script>
-		</div>
-	</div>
-    <!-- Feedback -->
-	<section id="feedback">
-		<div class="container">
-			<div class="row">
-			  <h3 class="big-text">Your Feedback</h3>
-			  <p class="description"> You can leave us your feedback in a form below. We will contact you as soon as possible. </p>
-			  <form action="mailto:vifirsanova@gmail.com" method="post" enctype="text/plain">
-				<label for="fname">First Name</label>
-				<input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </header>
+    <div class="content">
+    </div>
+  </div>
 
-				<label for="lname">Last Name</label>
-				<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Виктория Фирсанова</p>
+    </div>
+  </footer>
 
-				<label for="specialization">What is your specialization?</label>
-				<select id="specialization" name="specialization">
-				  <option value="academic">Academic Research</option>
-				  <option value="it">IT-Development</option>
-				  <option value="med">Medicine</option>
-				  <option value="fin">Finance</option>
-				  <option value="oth">Other</option>
-				</select>
-
-				<label for="feedback">Feedback</label>
-				<textarea id="feedback" name="feedback" placeholder="Write something.." style="height:200px"></textarea>
-
-				<input type="submit" value="Submit">
-			  </form>
-			</div>
-		</div>
-    </section>
-	<!-- Footer -->
-	<footer>
-	  <p class="p__footer">Please email vifirsanova@gmail.com <br>EMPI: Empathic Machine Processors for Inclusion &copy; 2023 | Victoria Firsanova<br> <a class="comment" href="#"> Switch to Russian </a><p>
-		 <div class="social-footer">
-                    <a class="social-button twitter" href="https://www.twitter.com/vifirsanova" title="Join us on Twitter"><i class="fa fa-twitter"></i></a>
-                    <a class="social-button linkedin" href="https://www.linkedin.com/in/victoria-firsanova-8795301b2/" title="Join us on LinkedIn"><i class="fa fa-linkedin"></i></a>
-                    <a class="social-button github" href="https://github.com/vifirsanova" title="Join us on GitHub"><i class="fa fa-github"></i></a>
-                    <a class="social-button vk" href="https://vk.com/the_black_box_podcast" title="Join us on VK"><i class="fa fa-vk"></i></a>
-                </div>
-	</footer>
-	<!-- Social Media Bar -->
-	<nav class="social">
-    <ul>
-      <li><a href="https://twitter.com/vifirsanova" title="Join us on Twitter"> <i class="fa fa-twitter"></i></a></li>
-      <li><a href="https://github.com/vifirsanova" title="Join us on GitHub"> <i class="fa fa-github"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/victoria-firsanova-8795301b2/" title="Join us on LinkedIn"> <i class="fa fa-linkedin"></i></a></li>
-	  <li><a href="https://vk.com/the_black_box_podcast" title="Join us on VK"> <i class="fa fa-vk"></i></a></li>
-    </ul>
-	</nav>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
