@@ -1,0 +1,191 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'helvetica', sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+.navbar {
+  background-color: #fff;
+  color: #fff;
+  text-align: center; /* Center align the text */
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center align the items horizontally */
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  display: inline-block; /* Change display to inline-block */
+  padding: 5px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold; /* Make text bold */
+  font-size: 24rm;
+}
+
+
+.block {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+
+.navbar ul li:not(:last-child) a::after {
+  content: "|"; /* Add "|" after each menu item except the last one */
+  margin-left: 10px;
+  color: #000; /* Set color for "|" */
+}
+
+.image-container {
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  %border: solid green;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  margin-top: 2.5em;
+}
+
+.image-container img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+header {
+  margin-top: 50px;
+  %border: solid red;
+}
+
+header h1 {
+  font-size: 128px;
+  %border: solid green;
+  text-align: center;
+}
+
+header h2 {
+  font-size: 24px;
+  text-align: center;
+  line-height: 9px;
+}
+
+.par h2{
+  margin: 25px;
+  line-height: 25px;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  z-index: 1000;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.scroll-to-top.show {
+  opacity: 0.6;
+}
+
+.scroll-to-top.show:hover {
+    opacity: 1;
+}
+
+h3 {
+  font-size: 5em;
+  text-align: center;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.image-container-blocks {
+  height: 65vh;
+  max-width: 100%;
+  display: flex;
+  margin-top: 3em;
+  transition: transform 1s;
+}
+
+.image-container-blocks img {
+  height: 100%;
+  max-width: 100%;
+}
+
+.image-container-blocks:hover {
+  transform: scale(1.1);
+}
+
+.text-field {
+  margin: 1rem;
+  flex-direction: column;
+}
+
+p {
+  text-align: center;
+}
+
+.image-container-block {
+  height: 35vh;
+  max-width: 100%;
+  display: flex;
+  margin-top: 2em;
+  justify-content: center;
+}
