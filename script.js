@@ -1,22 +1,20 @@
-const checkbox = document.getElementById('checkbox');
+document.addEventListener("DOMContentLoaded", function() {
+  var scrollToTopButton = document.getElementById("scrollToTop");
 
-checkbox.addEventListener('change', ()=>{
-  document.body.classList.toggle('light');
-})
+  // Show button when user scrolls down
+  window.addEventListener("scroll", function() {
+    if (window.pageYOffset > 100) {
+      scrollToTopButton.classList.add("show");
+    } else {
+      scrollToTopButton.classList.remove("show");
+    }
+  });
 
-var back_top_button = document.getElementById("scroll_btn");
-
-window.onscroll = function() {scrollfunc()};
-
-function scrollfunc() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-	back_top_button.style.display = "block";
-  } else {
-	back_top_button.style.display = "none";
-  }
-}
-
-function Scrollback() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+  // Scroll to top when button is clicked
+  scrollToTopButton.addEventListener("click", function() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+});
